@@ -4,15 +4,15 @@ public interface IPlayable
     void Play();
 }
 
-public class MusicPlayer : Iplayable
+public class MusicPlayer : IPlayable
 {
-       public void Play()
+    public void Play()
     {
         Console.WriteLine("Playing music");
     }
 }
 
-public class VideoPlayer : Iplayable
+public class VideoPlayer : IPlayable
 {
     public void Play()
     {

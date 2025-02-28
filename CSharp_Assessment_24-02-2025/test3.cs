@@ -1,10 +1,10 @@
 using System;
 public class Library
 {
-    public string Title { get; set; };
-    public string Author { get; set; };
-    public string Isbn { get; set; };
-    public Library() 
+    public string Title { get; set; }
+    public string Author { get; set; }
+    public string Isbn { get; set; }
+    public Library()
     {
         Title = "Title";
         Author = "Author";
@@ -27,7 +27,7 @@ public class Library
 
 public class MainClass
 {
-    public static void ()
+    public static void Main()
     {
         Library l = new Library("Title", "Author", "Isbn");
         Library l1 = new Library("Title", "Author");

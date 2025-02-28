@@ -1,3 +1,4 @@
+using System;
 public class Department
 {
     public string Manager { get; set; }

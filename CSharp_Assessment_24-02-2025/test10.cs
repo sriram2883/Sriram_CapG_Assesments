@@ -9,7 +9,7 @@ public class User
         Role = role;
     }
 
-    public virtual AccessControl()
+    public virtual void AccessControl()
     {
         Console.WriteLine("Username: {0}, Role: {1}", Username, Role);
     }
@@ -20,7 +20,7 @@ public class Admin : User
     public Admin(string username, string role) : base(username, role)
     {
     }
-    public override AccessControl()
+    public override void AccessControl()
     {
         Console.WriteLine("Username: {0}, Role: {1}, Access: Full", Username, Role);
     }
@@ -31,7 +31,7 @@ public class Customer : User
     public Customer(string username, string role) : base(username, role)
     {
     }
-    public override AccessControl()
+    public override void AccessControl()
     {
         Console.WriteLine("Username: {0}, Role: {1}, Access: Limited", Username, Role);
     }

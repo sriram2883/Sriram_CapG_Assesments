@@ -1,7 +1,7 @@
 using System;
 public class Vehicle
 {
-    public void start()
+    public virtual void start()
     {
         Console.WriteLine("Vehicle started");
     }
